@@ -85,7 +85,7 @@ function Bewerbung() {
 
   return (
     <PageShell>
-      <section className="page-intro"><div className="site-container"><nav className="job-breadcrumb" aria-label="Brotkrümelnavigation"><Link to="/">Start</Link><span>/</span><Link to="/karriere">Karriere</Link><span>/</span><span>Bewerbung</span></nav><p className="eyebrow text-signal">Karriere · Bewerbung</p><h1>Bewerben Sie sich in unter drei Minuten.</h1><p className="page-lead">Kurze Angaben genügen. Wir melden uns zuerst mit einem persönlichen Gespräch.</p></div></section>
+      <section className="page-intro page-intro-tight"><div className="site-container"><nav className="job-breadcrumb" aria-label="Brotkrümelnavigation"><Link to="/">Start</Link><span>/</span><Link to="/karriere">Karriere</Link><span>/</span><span>Bewerbung</span></nav><p className="eyebrow text-signal">Karriere · Bewerbung</p><h1>Bewerben Sie sich in unter drei Minuten.</h1><p className="page-lead">Kurze Angaben genügen. Wir melden uns zuerst mit einem persönlichen Gespräch.</p></div></section>
       <section className="bg-surface"><div className="application-layout">
         <form className="application-form" onSubmit={handleSubmit} noValidate>
           <div className="application-grid">
