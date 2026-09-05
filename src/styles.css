@@ -250,7 +250,6 @@
   .member-card h3 { margin-top: 1.5rem; font-size: 1.3rem; font-weight: 600; }
   .member-role { margin-top: .4rem; color: var(--signal); font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
   .member-card > p:last-child { margin-top: .8rem; color: var(--muted-foreground); font-size: .9rem; line-height: 1.65; }
-  .mockup-note { margin-top: 3rem; border-left: 3px solid var(--signal); padding-left: 1rem; color: var(--muted-foreground); font-size: .85rem; }
   .job-list { margin-top: 4rem; border-top: 1px solid var(--border); }
   .job-row { display: flex; align-items: center; gap: 1.5rem; padding: 1.6rem 0; border-bottom: 1px solid var(--border); color: inherit; }
   .job-row:focus-visible { outline: 2px solid var(--signal); outline-offset: 4px; }

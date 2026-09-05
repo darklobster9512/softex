@@ -43,7 +43,6 @@ function Team() {
             </article>
           ))}
         </div>
-        <p className="mockup-note">Hinweis: Die gezeigten Teamprofile sind Beispiel-Platzhalter und werden gegen die tatsächlichen Teammitglieder ersetzt.</p>
       </section>
       <section className="bg-surface py-20 md:py-28">
         <div className="site-container grid gap-10 md:grid-cols-3">
