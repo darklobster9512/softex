@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, Mail, MapPin } from "lucide-react";
 import { PageShell } from "../components/site-shell";
 
-export const Route = createFileRoute("/kontakt")({ head: () => ({ meta: [{ title: "Kontakt | softex.solutions" }, { name: "description", content: "Kontakt zur Softex Unternehmensberatung & Software GmbH in Hamburg." }, { property: "og:title", content: "Kontakt | softex.solutions" }, { property: "og:description", content: "Sprechen Sie mit uns über Ihr technisches Vorhaben." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: Kontakt });
+export const Route = createFileRoute("/kontakt")({ head: () => ({ meta: [{ title: "Kontakt: Softex in Hamburg | softex.solutions" }, { name: "description", content: "Sprechen Sie mit Softex über Ihr technisches Vorhaben — Unternehmensberatung und Softwareentwicklung aus Hamburg." }, { property: "og:title", content: "Kontakt: Softex in Hamburg | softex.solutions" }, { property: "og:description", content: "Sprechen Sie mit Softex über Ihr technisches Vorhaben — Unternehmensberatung und Softwareentwicklung aus Hamburg." }, { property: "og:type", content: "website" }, { property: "og:url", content: "/kontakt" }, { name: "twitter:card", content: "summary_large_image" }] }), links: [{ rel: "canonical", href: "/kontakt" }], component: Kontakt });
 
 function Kontakt() {
   return (
