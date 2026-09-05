@@ -88,7 +88,7 @@
   --destructive-foreground: oklch(0.984 0.003 247.858);
   --border: oklch(0.929 0.013 255.508);
   --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --ring: oklch(0.713675 0.149424 234.105234);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -104,9 +104,9 @@
   --sidebar-ring: oklch(0.704 0.04 256.788);
   --ink: oklch(0.19 0.018 218);
   --surface: oklch(0.95 0.01 220);
-  --signal: oklch(0.72 0.15 205);
-  --action: oklch(0.7 0.17 155);
-  --action-foreground: oklch(0.16 0.03 160);
+  --signal: oklch(0.713675 0.149424 234.105234);
+  --action: oklch(0.713675 0.149424 234.105234);
+  --action-foreground: oklch(0.19 0.018 218);
 }
 
 .dark {
@@ -166,9 +166,8 @@
   .site-header { position: relative; z-index: 30; width: 100%; }
   .site-header-inverse { position: absolute; inset: 0 0 auto; color: var(--primary-foreground); }
   .site-header-solid { background: var(--background); border-bottom: 1px solid var(--border); color: var(--foreground); }
-  .brand { display: inline-flex; align-items: center; gap: .65rem; font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; }
-  .brand-mark { position: relative; display: flex; width: 1.85rem; gap: .2rem; transform: skew(-28deg); }
-  .brand-mark i { height: 1.45rem; width: .72rem; background: var(--signal); display: block; }
+  .brand { display: inline-flex; align-items: center; }
+  .brand img { display: block; width: 8.75rem; height: auto; }
   .nav-link { font-size: .82rem; color: inherit; opacity: .72; }
   .nav-link:hover, .nav-link-active { opacity: 1; color: var(--signal); }
   .button { display: inline-flex; min-height: 2.8rem; align-items: center; justify-content: center; gap: .55rem; border-radius: .2rem; padding: .7rem 1rem; font-size: .82rem; font-weight: 700; }
