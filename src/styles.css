@@ -218,6 +218,29 @@
   .contact-page { min-height: 42rem; padding: 7rem 0; background: var(--ink); color: var(--primary-foreground); }.contact-page .page-lead { color: color-mix(in oklab, var(--primary-foreground) 65%, transparent); }
   .contact-tile { display: flex; align-items: center; gap: 1rem; min-height: 8rem; background: var(--ink); padding: 1.5rem; }.contact-tile:hover { background: color-mix(in oklab, var(--ink) 90%, var(--signal)); }.contact-tile span { flex: 1; font-size: .9rem; }.contact-tile small { display: block; margin-bottom: .5rem; color: var(--signal); }
   .legal-copy { max-width: 44rem; }.legal-copy h2 { margin-top: 2.5rem; font-size: 1.35rem; font-weight: 600; }.legal-copy h2:first-child { margin-top: 0; }.legal-copy p { margin-top: .8rem; color: var(--muted-foreground); line-height: 1.75; }.legal-copy a { color: var(--signal); }.legal-note { border-left: 3px solid var(--signal); padding-left: 1rem; }
+  .team-grid { display: grid; gap: 2.5rem 2rem; margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 3rem; }
+  .member-card { border-top: 2px solid var(--foreground); padding-top: 1.5rem; }
+  .member-avatar { display: grid; width: 4.5rem; height: 4.5rem; place-items: center; background: var(--signal); color: var(--ink); font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; }
+  .member-card h3 { margin-top: 1.5rem; font-size: 1.3rem; font-weight: 600; }
+  .member-role { margin-top: .4rem; color: var(--signal); font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+  .member-card > p:last-child { margin-top: .8rem; color: var(--muted-foreground); font-size: .9rem; line-height: 1.65; }
+  .mockup-note { margin-top: 3rem; border-left: 3px solid var(--signal); padding-left: 1rem; color: var(--muted-foreground); font-size: .85rem; }
+  .job-list { margin-top: 4rem; border-top: 1px solid var(--border); }
+  .job-posting { border-bottom: 1px solid var(--border); }
+  .job-posting summary { display: flex; align-items: center; gap: 1.5rem; padding: 1.6rem 0; cursor: pointer; list-style: none; }
+  .job-posting summary::-webkit-details-marker { display: none; }
+  .job-posting summary:focus-visible { outline: 2px solid var(--signal); outline-offset: 4px; }
+  .job-head { flex: 1; }
+  .job-title { font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; }
+  .job-tags { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .6rem; }
+  .job-tag { border: 1px solid var(--border); background: var(--background); padding: .2rem .6rem; font-size: .72rem; font-weight: 700; color: var(--muted-foreground); }
+  .job-chevron { flex-shrink: 0; transition: transform .2s ease; }
+  .job-posting[open] .job-chevron { transform: rotate(180deg); }
+  .job-body { display: grid; gap: 2rem; padding: 0 0 2.2rem; max-width: 60rem; }
+  .job-body h3 { font-size: .85rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--signal); }
+  .job-body ul { margin-top: .8rem; display: grid; gap: .5rem; padding-left: 1.1rem; color: var(--muted-foreground); font-size: .92rem; line-height: 1.6; list-style: disc; }
+  .job-apply { color: var(--muted-foreground); font-size: .92rem; }
+  .job-apply a { color: var(--signal); font-weight: 700; }
 }
 
 @media (min-width: 768px) {
