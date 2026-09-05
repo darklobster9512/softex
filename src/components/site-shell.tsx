@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Menu, Phone, X } from "lucide-react";
 import { useState, type ReactNode } from "react";
-import softexLogo from "@/assets/softex-logo.png.asset.json";
 
 const links = [
   { to: "/leistungen", label: "Leistungen" },
@@ -14,7 +13,7 @@ const links = [
 export function Brand({ inverse = false }: { inverse?: boolean }) {
   return (
     <Link to="/" className="brand" aria-label="Softex Startseite">
-      <img src={softexLogo.url} alt="Softex" />
+      <img src="/softex-logo.png" alt="Softex" />
     </Link>
   );
 }
