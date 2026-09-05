@@ -258,7 +258,38 @@
   .job-tag { border: 1px solid var(--border); background: var(--background); padding: .2rem .6rem; font-size: .72rem; font-weight: 700; color: var(--muted-foreground); }
   .job-chevron { flex-shrink: 0; transition: transform .2s ease, color .2s ease; }
   .job-section-title { font-size: .85rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--signal); }
-  .job-detail-list { margin-top: 1.2rem; display: grid; gap: .7rem; padding-left: 1.1rem; color: var(--muted-foreground); font-size: 1rem; line-height: 1.65; list-style: disc; }
+  .job-breadcrumb { display: flex; flex-wrap: wrap; gap: .55rem; margin-bottom: 3rem; color: var(--muted-foreground); font-size: .75rem; }
+  .job-breadcrumb a:hover { color: var(--signal); }
+  .job-detail-stage { background: var(--background); }
+  .job-detail-layout { display: grid; gap: 2rem; padding-block: 4rem 6rem; }
+  .job-detail-copy, .job-facts { border: 1px solid var(--border); background: var(--card); }
+  .job-detail-copy { padding: 1.5rem; }
+  .job-copy-section + .job-copy-section { margin-top: 2.5rem; border-top: 1px solid var(--border); padding-top: 2.5rem; }
+  .job-description { margin-top: 1rem; color: var(--muted-foreground); line-height: 1.75; }
+  .job-section-index { color: var(--signal); font-size: .72rem; font-weight: 700; }
+  .job-copy-section h2 { margin-top: .7rem; font-size: 1.7rem; font-weight: 600; }
+  .job-detail-list { margin-top: 1.5rem; display: grid; gap: .9rem; color: var(--muted-foreground); font-size: .92rem; line-height: 1.65; }
+  .job-detail-list li { display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: .75rem; }
+  .job-detail-list li > span { padding-top: .15rem; color: var(--signal); font-size: .68rem; font-weight: 700; }
+  .job-facts { align-self: start; padding: 1.5rem; }
+  .job-facts ul { margin-top: 1.5rem; display: grid; gap: 1.2rem; }
+  .job-facts li { display: grid; grid-template-columns: 1.2rem minmax(0, 1fr); gap: .8rem; align-items: start; font-size: .88rem; }
+  .job-facts li > svg { width: 1rem; color: var(--muted-foreground); }
+  .job-facts small { display: block; margin-bottom: .25rem; color: var(--muted-foreground); font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+  .job-apply-button { width: 100%; margin-top: 2rem; }
+  .job-contact { margin-top: 1rem; color: var(--muted-foreground); font-size: .72rem; line-height: 1.5; }
+  .job-contact a { color: var(--signal); overflow-wrap: anywhere; }
+  .application-layout { width: min(100% - 2rem, 48rem); margin-inline: auto; padding-block: 4rem 6rem; }
+  .application-form { border: 1px solid var(--border); background: var(--card); padding: 1.5rem; }
+  .application-grid { display: grid; gap: 1.4rem; }
+  .application-field label { display: block; margin-bottom: .55rem; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+  .application-field input, .application-field select { width: 100%; min-height: 3rem; border: 1px solid var(--input); border-radius: .2rem; background: transparent; color: var(--foreground); padding: .6rem .75rem; font: inherit; font-size: .875rem; box-shadow: none; }
+  .application-field select:focus-visible { outline: 1px solid var(--ring); outline-offset: 1px; }
+  .application-field-wide { grid-column: 1 / -1; }
+  .application-consent { margin-top: 1.5rem; color: var(--muted-foreground); font-size: .75rem; line-height: 1.6; }
+  .application-consent a { color: var(--signal); text-decoration: underline; text-underline-offset: .15rem; }
+  .application-submit { margin-top: 1.5rem; }
+  .application-submit .button { width: 100%; }
 }
 
 @media (min-width: 768px) {
@@ -273,11 +304,19 @@
   .contact-form-column { border-left: 1px solid var(--border); padding-left: 4rem; }
   .contact-form-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .form-field-wide { grid-column: 1 / -1; }
+  .job-detail-layout { grid-template-columns: minmax(0, 2fr) minmax(17rem, 1fr); padding-block: 6rem 7rem; }
+  .job-detail-copy { padding: 2.5rem; }
+  .job-facts { position: sticky; top: 7rem; padding: 2rem; }
+  .application-layout { width: min(100% - 5rem, 48rem); padding-block: 6rem 7rem; }
+  .application-form { padding: 3rem; }
+  .application-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .application-submit .button { width: auto; }
 }
 
 @media (max-width: 767px) {
   .hero-shade { background: color-mix(in oklab, var(--ink) 78%, transparent); }
   .service-row { grid-template-columns: 2rem 1fr; }.service-row > div { grid-column: 2; }
+  .job-hero h1 { overflow-wrap: anywhere; font-size: clamp(2.7rem, 13vw, 4rem); }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; } }
