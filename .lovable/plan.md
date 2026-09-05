@@ -7,7 +7,7 @@ Auf der Team-Seite (`/team`) zwei Einträge im `members`-Array korrigieren:
    Rolle ändern von `Hardware & Netzwerke` zu `Projektleiter`.
 
 2. **Aylin Larsen**  
-   Name auf einen deutschen Namen (`Anna Lehmann`) ändern.  
+   Name auf einen deutschen männlichen Namen (`Andreas Lehmann`) ändern.
    Rolle ändern von `Beratung & Projektleitung` zu `Recruiter`.  
    Initialen bleiben passend bei `AL`.
 
