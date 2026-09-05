@@ -245,6 +245,9 @@
 
 @media (min-width: 768px) {
   .site-container { width: min(100% - 5rem, 76rem); }
+  .team-grid { grid-template-columns: repeat(3, 1fr); }
+  .job-body { grid-template-columns: 1fr 1fr; padding-left: 4.5rem; }
+  .job-apply { grid-column: 1 / -1; }
   .section-heading { grid-template-columns: 1.2fr .8fr; }
   .capability-grid { grid-template-columns: repeat(4,1fr); }
   .capability { min-height: 22rem; padding: 2rem 1.4rem; border-right: 1px solid var(--border); }.capability:first-child { padding-left: 0; }.capability:last-child { border-right: 0; padding-right: 0; }
