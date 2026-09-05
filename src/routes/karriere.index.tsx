@@ -6,13 +6,15 @@ import { jobs } from "../lib/jobs";
 export const Route = createFileRoute("/karriere/")({
   head: () => ({
     meta: [
-      { title: "Karriere | softex.solutions" },
-      { name: "description", content: "Offene Stellen bei Softex in Hamburg: Beratung, Softwareentwicklung und Infrastruktur. Bewerbung per E-Mail an kontakt@softex.solutions." },
-      { property: "og:title", content: "Karriere | softex.solutions" },
+      { title: "Karriere & offene Stellen in Hamburg | softex.solutions" },
+      { name: "description", content: "Offene Stellen bei Softex in Hamburg: Beratung, Softwareentwicklung und Infrastruktur — Online-Bewerbung in wenigen Minuten." },
+      { property: "og:title", content: "Karriere & offene Stellen in Hamburg | softex.solutions" },
       { property: "og:description", content: "Arbeiten an Systemen, die im Alltag bestehen: offene Stellen bei Softex in Hamburg." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "/karriere" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "/karriere" }],
   }),
   component: Karriere,
 });
