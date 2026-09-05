@@ -1,8 +1,10 @@
-# Styling-Plan für eine Website im Stil von UPDIVISION
+# Website-Plan für softex.solutions
 
 ## Zielbild
 
-Eine eigenständige, hochwertige B2B-Website für digitale Produkte: selbstbewusst, technisch kompetent und zugleich menschlich. Die Referenz dient als gestalterische Leitplanke, wird aber nicht kopiert. Übernommen werden ihre Prinzipien — große visuelle Einstiege, klare Typografie, produktnahe Illustrationen, starke Kontraste und großzügige redaktionelle Seiten.
+Eine eigenständige, hochwertige B2B-Website für **Softex Unternehmensberatung & Software GmbH**: selbstbewusst, technisch kompetent und zugleich menschlich. Die Referenz dient als gestalterische Leitplanke, wird aber nicht kopiert. Übernommen werden ihre Prinzipien — große visuelle Einstiege, klare Typografie, produktnahe Illustrationen, starke Kontraste und großzügige Inhaltsflächen.
+
+Die erste Version positioniert softex.solutions rund um Unternehmensberatung, Systemanalyse sowie die Entwicklung von System- und Anwendungssoftware, Hardware und Netzwerken. Nicht belegte Kunden, Projekte, Kennzahlen oder Leistungsversprechen werden nicht erfunden.
 
 ## Analyse der Referenz
 
@@ -76,48 +78,43 @@ Eine eigenständige, hochwertige B2B-Website für digitale Produkte: selbstbewus
 - Kennzahlenband, Partnerlogo-Reihe, kompakte CTA-Zeile und umfangreicher Footer.
 - Blog-Leselayout mit Inhaltsbreite, Bildunterschriften, Zitat- und Hinweisstil.
 
-## Seitenaufbau
+## Seitenaufbau für softex.solutions
 
 ### Startseite
-1. Filmischer Einstieg mit Angebot und kurzer Positionierung.
-2. Drei Kernleistungen als produktnahe, leicht interaktive Szenen.
-3. Entscheidungsblock „Produkt bauen / Team verstärken“.
-4. Ausgewählte Projekte mit großen Vorschaubildern.
-5. Partner, Kennzahlen und Kundenstimmen als Vertrauensbelege.
-6. Klarer Abschluss mit Kontaktaktion und Footer.
+1. Filmischer Einstieg mit „softex.solutions“ als klarer erster Blickfang und einer Positionierung rund um Beratung und maßgeschneiderte Software.
+2. Vier Kompetenzfelder: Unternehmensberatung, Systemanalyse, Softwareentwicklung sowie Hardware & Netzwerke.
+3. Ein produktnaher Prozess von Analyse über Konzeption und Entwicklung bis zur Einführung.
+4. Vertrauensbereich über Arbeitsweise und technische Sorgfalt — ohne erfundene Logos, Kennzahlen oder Referenzen.
+5. Klarer Kontaktabschluss mit `kontakt@softex.solutions`.
 
 ### Leistungen
 1. Heller oder farbiger Seiteneinstieg statt identischer Startseiten-Kopie.
-2. Leistungsnavigation mit vier klaren Kategorien.
+2. Vier klare Kategorien entsprechend dem Unternehmensgegenstand.
 3. Nummerierter Prozess mit wechselndem Text-Bild-Rhythmus.
-4. Modulare Pakete und Teamzusammenstellung.
-5. Passender Projektbeweis und Kontaktaktion.
+4. Konkrete Ergebnisse je Leistung, sachlich formuliert und ohne unbestätigte Branchenbehauptungen.
+5. Kontaktaktion für ein Erstgespräch per E-Mail.
 
-### Portfolio
-1. Prägnanter Einstieg mit Positionierung.
-2. Kuratierte Leitprojekte in einem asymmetrischen Raster.
-3. Kategorien mit kurzen redaktionellen Einleitungen.
-4. Bedienbare Filter und konsistentes Projektraster.
-5. Kundenstimme und Kontaktabschluss.
-
-### Case Study
-1. Projektspezifischer Einstieg mit eigenem Farbakzent.
-2. Große, unverfälschte Produkt-Screens.
-3. Problem, Ansatz und Ergebnis in kurzen Kapiteln.
-4. Faktenzeile für Leistungen, Plattformen und Zeitraum.
-5. Ergebniskennzahlen, Testimonial und nächstes Projekt.
+### Unternehmen
+1. Prägnante Vorstellung der Softex Unternehmensberatung & Software GmbH.
+2. Arbeitsweise mit Fokus auf Analyse, belastbare Lösungen und langfristige Nutzbarkeit.
+3. Rechtliche Firmendaten kompakt und transparent verlinkt.
+4. Kontaktabschluss.
 
 ### Kontakt
 1. Großer, ruhiger Titel und eine klare Einladung.
-2. Kurzes Formular plus direkte E-Mail als gleichwertige Wege.
-3. Standorte in einer reduzierten Liste oder Kartenansicht.
-4. Datenschutz- und Reaktionszeit-Hinweis direkt am Formular.
+2. Direkte Kontaktmöglichkeit über `kontakt@softex.solutions`.
+3. Geschäftsanschrift: Langwisch 2, 22391 Hamburg.
+4. Kein funktionsloses Formular in der ersten Version; Kontakt läuft verlässlich per E-Mail.
 
-### Blog und Artikel
-1. Übersicht mit hervorgehobenem Beitrag und Themenfiltern.
-2. Artikelkopf mit Kategorie, Datum, Autor und Lesezeit.
-3. Schmale Lesespalte, großzügige Überschriften und große Inhaltsbilder.
-4. Inhaltsverzeichnis bei langen Artikeln sowie passende Folgebeiträge.
+### Impressum
+1. Softex Unternehmensberatung & Software GmbH.
+2. Langwisch 2, 22391 Hamburg.
+3. Amtsgericht Hamburg, HRB 163770.
+4. Geschäftsführer: Istvan Limperger.
+5. Kontakt: `kontakt@softex.solutions`.
+
+### Datenschutz
+Eine separate, klar strukturierte Seite als Platzhalter für die rechtlich zu prüfende Datenschutzerklärung. Es werden keine zusätzlichen Analyse-, Tracking- oder Formular-Dienste eingebaut, solange deren rechtliche Angaben nicht vorliegen.
 
 ## Bild- und Illustrationsstil
 - Echte Produktoberflächen, Prozessdetails und Teamsituationen statt beliebiger Stockfotos.
@@ -149,13 +146,12 @@ Eine eigenständige, hochwertige B2B-Website für digitale Produkte: selbstbewus
 - Prüfung auf Desktop, Tablet und Mobil sowie mit reduzierter Bewegung.
 
 ## Umsetzungsreihenfolge
-1. Markenparameter und Inhalte festlegen: Name, Angebot, Zielgruppen, reale Projekte und gewünschte Seiten.
-2. Farb-, Typografie-, Raster- und Bewegungs-Tokens definieren.
-3. Navigation, Footer und wiederverwendbare Inhaltsbausteine erstellen.
-4. Startseite als visuelle Referenz für das gesamte System umsetzen.
-5. Leistungen, Portfolio, Case Study, Kontakt und Blog aus denselben Bausteinen ableiten.
-6. Echte Medien und Projekt-Screens einpflegen.
-7. Responsivität, Zugänglichkeit, Ladezeit und Metadaten abschließend prüfen.
+1. Farb-, Typografie-, Raster- und Bewegungs-Tokens für softex.solutions definieren.
+2. Navigation, Footer und wiederverwendbare Inhaltsbausteine erstellen.
+3. Startseite als visuelle Referenz für das gesamte System umsetzen.
+4. Leistungen, Unternehmen, Kontakt, Impressum und Datenschutz als eigene Seiten ableiten.
+5. Passende, eigenständige Medien und Software-Visuals lokal einpflegen.
+6. Responsivität, Zugänglichkeit, Ladezeit und individuelle Metadaten abschließend prüfen.
 
 ## Technische Leitplanken
 - Umsetzung innerhalb des vorhandenen React-/Tailwind-Systems mit semantischen Design-Tokens.
