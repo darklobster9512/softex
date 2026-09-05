@@ -283,7 +283,8 @@
   .application-form { border: 1px solid var(--border); background: var(--card); padding: 1.5rem; }
   .application-grid { display: grid; gap: 1.4rem; }
   .application-field label { display: block; margin-bottom: .55rem; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
-  .application-field input, .application-field button[role="combobox"] { min-height: 3rem; border-radius: .2rem; box-shadow: none; }
+  .application-field input, .application-field select { width: 100%; min-height: 3rem; border: 1px solid var(--input); border-radius: .2rem; background: transparent; color: var(--foreground); padding: .6rem .75rem; font: inherit; font-size: .875rem; box-shadow: none; }
+  .application-field select:focus-visible { outline: 1px solid var(--ring); outline-offset: 1px; }
   .application-field-wide { grid-column: 1 / -1; }
   .application-consent { margin-top: 1.5rem; color: var(--muted-foreground); font-size: .75rem; line-height: 1.6; }
   .application-consent a { color: var(--signal); text-decoration: underline; text-underline-offset: .15rem; }
@@ -315,6 +316,7 @@
 @media (max-width: 767px) {
   .hero-shade { background: color-mix(in oklab, var(--ink) 78%, transparent); }
   .service-row { grid-template-columns: 2rem 1fr; }.service-row > div { grid-column: 2; }
+  .job-hero h1 { overflow-wrap: anywhere; font-size: clamp(2.7rem, 13vw, 4rem); }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; } }

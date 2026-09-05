@@ -6,7 +6,6 @@ import { z } from "zod";
 import { PageShell } from "../components/site-shell";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select";
 import { jobs } from "../lib/jobs";
 
 declare global {
@@ -94,8 +93,8 @@ function Bewerbung() {
             <div className="application-field"><label htmlFor="nachname">Nachname *</label><Input id="nachname" name="nachname" autoComplete="family-name" maxLength={80} required value={form.nachname} onChange={handleChange} /></div>
             <div className="application-field"><label htmlFor="email">E-Mail *</label><Input id="email" name="email" type="email" autoComplete="email" maxLength={254} required value={form.email} onChange={handleChange} /></div>
             <div className="application-field"><label htmlFor="telefon">Telefon *</label><Input id="telefon" name="telefon" type="tel" autoComplete="tel" maxLength={40} required value={form.telefon} onChange={handleChange} /></div>
-            <div className="application-field application-field-wide"><label htmlFor="stelle">Stelle</label><Select value={form.stelle} onValueChange={(value) => setForm((current) => ({ ...current, stelle: value }))}><SelectTrigger id="stelle"><SelectValue placeholder="Stelle auswählen (optional)" /></SelectTrigger><SelectContent><SelectItem value="Initiativbewerbung">Initiativbewerbung</SelectItem>{jobs.map((job) => <SelectItem key={job.slug} value={job.title}>{job.title}</SelectItem>)}</SelectContent></Select></div>
-            <div className="application-field application-field-wide"><label htmlFor="anstellungsart">Anstellungsart *</label><Select value={form.anstellungsart} onValueChange={(value) => setForm((current) => ({ ...current, anstellungsart: value }))}><SelectTrigger id="anstellungsart"><SelectValue placeholder="Bitte wählen" /></SelectTrigger><SelectContent><SelectItem value="teilzeit">Teilzeit</SelectItem><SelectItem value="minijob">Minijob</SelectItem></SelectContent></Select></div>
+            <div className="application-field application-field-wide"><label htmlFor="stelle">Stelle</label><select id="stelle" value={form.stelle} onChange={(event) => setForm((current) => ({ ...current, stelle: event.target.value }))}><option value="">Stelle auswählen (optional)</option><option value="Initiativbewerbung">Initiativbewerbung</option>{jobs.map((job) => <option key={job.slug} value={job.title}>{job.title}</option>)}</select></div>
+            <div className="application-field application-field-wide"><label htmlFor="anstellungsart">Anstellungsart *</label><select id="anstellungsart" required value={form.anstellungsart} onChange={(event) => setForm((current) => ({ ...current, anstellungsart: event.target.value }))}><option value="">Bitte wählen</option><option value="teilzeit">Teilzeit</option><option value="minijob">Minijob</option></select></div>
           </div>
           <p className="application-consent">Mit dem Absenden erklären Sie sich mit der Verarbeitung Ihrer Daten gemäß unserer <Link to="/datenschutz">Datenschutzerklärung</Link> einverstanden.</p>
           <div className="application-submit"><Button type="submit" className="button button-action" disabled={submitting}>{submitting ? <><Loader2 className="animate-spin" aria-hidden="true" /> Wird gesendet…</> : <>Bewerbung senden <Send aria-hidden="true" /></>}</Button></div>
