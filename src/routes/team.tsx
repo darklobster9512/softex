@@ -5,13 +5,15 @@ import { ContactBand, PageIntro, PageShell } from "../components/site-shell";
 export const Route = createFileRoute("/team")({
   head: () => ({
     meta: [
-      { title: "Team | softex.solutions" },
+      { title: "Team: Beratung, Analyse & Entwicklung | softex.solutions" },
       { name: "description", content: "Das Team der Softex Unternehmensberatung & Software GmbH aus Hamburg: Beratung, Systemanalyse und Entwicklung aus einem Team." },
-      { property: "og:title", content: "Team | softex.solutions" },
+      { property: "og:title", content: "Team: Beratung, Analyse & Entwicklung | softex.solutions" },
       { property: "og:description", content: "Die Menschen hinter Beratung, Systemanalyse und Softwareentwicklung bei Softex." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "/team" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "/team" }],
   }),
   component: Team,
 });

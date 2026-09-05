@@ -4,7 +4,29 @@ import workspaceImage from "../assets/softex-workspace.jpg";
 import { ContactBand, Footer, Header } from "../components/site-shell";
 
 export const Route = createFileRoute("/")({
-  head: () => ({ meta: [{ title: "softex.solutions | Beratung & Software aus Hamburg" }, { name: "description", content: "Softex verbindet Unternehmensberatung, Systemanalyse und individuelle Softwareentwicklung in Hamburg." }, { property: "og:title", content: "softex.solutions | Beratung & Software" }, { property: "og:description", content: "Von der Analyse bis zur Umsetzung: Technik, die zu Ihrem Unternehmen passt." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }),
+  head: () => ({
+    meta: [
+      { title: "Softex | Unternehmensberatung & Softwareentwicklung in Hamburg" },
+      { name: "description", content: "Softex verbindet Unternehmensberatung, Systemanalyse und individuelle Softwareentwicklung in Hamburg — von der Analyse bis zum laufenden Betrieb." },
+      { property: "og:title", content: "Softex | Unternehmensberatung & Softwareentwicklung in Hamburg" },
+      { property: "og:description", content: "Von der Analyse bis zur Umsetzung: Technik, die zu Ihrem Unternehmen passt." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [{
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "Softex Unternehmensberatung & Software GmbH",
+        url: "/",
+        email: "kontakt@softex.solutions",
+        address: { "@type": "PostalAddress", streetAddress: "Langwisch 2", postalCode: "22391", addressLocality: "Hamburg", addressCountry: "DE" },
+      }),
+    }],
+  }),
   component: Index,
 });
 
