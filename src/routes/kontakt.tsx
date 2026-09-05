@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowUpRight, Mail, MapPin } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import { PageShell } from "../components/site-shell";
 
 export const Route = createFileRoute("/kontakt")({ head: () => ({ meta: [{ title: "Kontakt: Softex in Hamburg | softex.solutions" }, { name: "description", content: "Sprechen Sie mit Softex über Ihr technisches Vorhaben — Unternehmensberatung und Softwareentwicklung aus Hamburg." }, { property: "og:title", content: "Kontakt: Softex in Hamburg | softex.solutions" }, { property: "og:description", content: "Sprechen Sie mit Softex über Ihr technisches Vorhaben — Unternehmensberatung und Softwareentwicklung aus Hamburg." }, { property: "og:type", content: "website" }, { property: "og:url", content: "/kontakt" }, { name: "twitter:card", content: "summary_large_image" }] , links: [{ rel: "canonical", href: "/kontakt" }] }), component: Kontakt });
@@ -26,6 +26,11 @@ function Kontakt() {
               <a href="mailto:kontakt@softex.solutions" className="contact-row">
                 <Mail aria-hidden="true" />
                 <span><small>E-Mail</small>kontakt@softex.solutions</span>
+                <ArrowUpRight className="contact-row-arrow" aria-hidden="true" />
+              </a>
+              <a href="tel:+4940573077460" className="contact-row">
+                <Phone aria-hidden="true" />
+                <span><small>Telefon</small>040 573077460</span>
                 <ArrowUpRight className="contact-row-arrow" aria-hidden="true" />
               </a>
               <div className="contact-row">

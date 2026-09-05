@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { ArrowUpRight, Menu, Phone, X } from "lucide-react";
 import { useState, type ReactNode } from "react";
 import softexLogo from "@/assets/softex-logo.png.asset.json";
 
@@ -47,7 +47,7 @@ export function Footer() {
       <div className="site-container grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr]">
         <div><Brand inverse /><p className="mt-5 max-w-sm text-sm leading-6 text-primary-foreground/65">Beratung und Softwareentwicklung für Systeme, die im Alltag bestehen.</p></div>
         <div><p className="footer-label">Navigation</p><div className="mt-4 grid gap-3 text-sm"><Link to="/leistungen">Leistungen</Link><Link to="/unternehmen">Unternehmen</Link><Link to="/team">Team</Link><Link to="/karriere">Karriere</Link><Link to="/kontakt">Kontakt</Link></div></div>
-        <div><p className="footer-label">Kontakt</p><a className="mt-4 inline-flex items-center gap-2 text-sm text-signal" href="mailto:kontakt@softex.solutions">kontakt@softex.solutions <ArrowUpRight size={15} /></a><p className="mt-3 text-sm text-primary-foreground/65">Langwisch 2 · 22391 Hamburg</p></div>
+        <div><p className="footer-label">Kontakt</p><a className="mt-4 inline-flex items-center gap-2 text-sm text-signal" href="mailto:kontakt@softex.solutions">kontakt@softex.solutions <ArrowUpRight size={15} /></a><a className="mt-3 inline-flex items-center gap-2 text-sm text-signal" href="tel:+4940573077460"><Phone size={15} aria-hidden="true" /> 040 573077460</a><p className="mt-3 text-sm text-primary-foreground/65">Langwisch 2 · 22391 Hamburg</p></div>
       </div>
       <div className="border-t border-primary-foreground/10"><div className="site-container grid gap-3 py-6 text-xs text-primary-foreground/55 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center"><span className="min-w-0">© 2026 Softex Unternehmensberatung & Software GmbH</span><span className="flex flex-wrap gap-x-5 gap-y-2 sm:shrink-0"><Link to="/impressum">Impressum</Link><Link to="/datenschutz">Datenschutz</Link></span></div></div>
     </footer>
