@@ -38,29 +38,42 @@ function Kontakt() {
           <div className="contact-form-column">
             <p className="eyebrow text-signal">Nachricht senden</p>
             <h2>Worum geht es?</h2>
-            <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+            <form
+              className="contact-form"
+              onSubmit={(e) => {
+                e.preventDefault();
+                const data = new FormData(e.currentTarget);
+                const name = String(data.get("name") ?? "");
+                const email = String(data.get("email") ?? "");
+                const company = String(data.get("company") ?? "");
+                const message = String(data.get("message") ?? "");
+                const body = `Name: ${name}\nE-Mail: ${email}\nUnternehmen: ${company}\n\n${message}`;
+                window.location.href = `mailto:kontakt@softex.solutions?subject=${encodeURIComponent("Anfrage über softex.solutions")}&body=${encodeURIComponent(body)}`;
+              }}
+            >
               <div className="contact-form-grid">
                 <div className="form-field">
                   <label htmlFor="kontakt-name">Name</label>
-                  <input id="kontakt-name" name="name" type="text" autoComplete="name" placeholder="Ihr Name" />
+                  <input id="kontakt-name" name="name" type="text" autoComplete="name" placeholder="Ihr Name" required />
                 </div>
                 <div className="form-field">
                   <label htmlFor="kontakt-mail">E-Mail</label>
-                  <input id="kontakt-mail" name="email" type="email" autoComplete="email" placeholder="name@unternehmen.de" />
+                  <input id="kontakt-mail" name="email" type="email" autoComplete="email" placeholder="name@unternehmen.de" required />
                 </div>
                 <div className="form-field form-field-wide">
                   <label htmlFor="kontakt-firma">Unternehmen <span className="font-normal opacity-60">(optional)</span></label>
-                  <input id="kontakt-firma" name="company" type="text" autoComplete="organization" placeholder="Muster GmbH" />
+                  <input id="kontakt-firma" name="company" type="text" autoComplete="organization" placeholder="Ihr Unternehmen" />
                 </div>
                 <div className="form-field form-field-wide">
                   <label htmlFor="kontakt-nachricht">Nachricht</label>
-                  <textarea id="kontakt-nachricht" name="message" rows={5} placeholder="Worum geht es in Ihrem Vorhaben?" />
+                  <textarea id="kontakt-nachricht" name="message" rows={5} placeholder="Worum geht es in Ihrem Vorhaben?" required />
                 </div>
               </div>
               <div className="contact-form-footer">
                 <button type="submit" className="button button-action">Nachricht senden <ArrowUpRight size={16} aria-hidden="true" /></button>
-                <p className="form-note">Beispiel-Formular — es wird nichts versendet. Bitte kontaktieren Sie uns direkt per E-Mail.</p>
+                <p className="form-note">Ihre Angaben werden in Ihrem E-Mail-Programm als Nachricht an kontakt@softex.solutions vorbereitet.</p>
               </div>
+
             </form>
           </div>
         </div>
