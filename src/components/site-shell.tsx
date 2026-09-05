@@ -23,8 +23,8 @@ export function Header({ inverse = false }: { inverse?: boolean }) {
   const [open, setOpen] = useState(false);
   return (
     <header className={`site-header ${inverse ? "site-header-inverse" : "site-header-solid"}`}>
-      <div className="site-container flex h-20 items-center justify-between">
-        <Brand inverse={inverse} />
+      <div className="site-container grid h-20 grid-cols-[minmax(0,1fr)_auto] items-center gap-4 md:flex md:justify-between">
+        <div className="min-w-0"><Brand inverse={inverse} /></div>
         <nav className="hidden items-center gap-9 md:flex" aria-label="Hauptnavigation">
           {links.map((link) => <Link key={link.to} to={link.to} className="nav-link" activeProps={{ className: "nav-link nav-link-active" }}>{link.label}</Link>)}
           <a href="mailto:kontakt@softex.solutions" className="button button-action">Projekt anfragen <ArrowUpRight size={17} /></a>
@@ -49,7 +49,7 @@ export function Footer() {
         <div><p className="footer-label">Navigation</p><div className="mt-4 grid gap-3 text-sm"><Link to="/leistungen">Leistungen</Link><Link to="/unternehmen">Unternehmen</Link><Link to="/team">Team</Link><Link to="/karriere">Karriere</Link><Link to="/kontakt">Kontakt</Link></div></div>
         <div><p className="footer-label">Kontakt</p><a className="mt-4 inline-flex items-center gap-2 text-sm text-signal" href="mailto:kontakt@softex.solutions">kontakt@softex.solutions <ArrowUpRight size={15} /></a><p className="mt-3 text-sm text-primary-foreground/65">Langwisch 2 · 22391 Hamburg</p></div>
       </div>
-      <div className="border-t border-primary-foreground/10"><div className="site-container flex flex-col gap-3 py-6 text-xs text-primary-foreground/55 sm:flex-row sm:items-center sm:justify-between"><span>© 2026 Softex Unternehmensberatung & Software GmbH</span><span className="flex gap-5"><Link to="/impressum">Impressum</Link><Link to="/datenschutz">Datenschutz</Link></span></div></div>
+      <div className="border-t border-primary-foreground/10"><div className="site-container grid gap-3 py-6 text-xs text-primary-foreground/55 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center"><span className="min-w-0">© 2026 Softex Unternehmensberatung & Software GmbH</span><span className="flex flex-wrap gap-x-5 gap-y-2 sm:shrink-0"><Link to="/impressum">Impressum</Link><Link to="/datenschutz">Datenschutz</Link></span></div></div>
     </footer>
   );
 }
