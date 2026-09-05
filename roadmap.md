@@ -1,7 +1,7 @@
 # Roadmap
 
-- [ ] Designsystem und gemeinsame Navigation/Footer umsetzen
-- [ ] Startseite für softex.solutions erstellen
-- [ ] Leistungen, Unternehmen, Kontakt, Impressum und Datenschutz erstellen
-- [ ] Eigene visuelle Medien einpflegen
-- [ ] Responsivität, Metadaten und Bedienbarkeit prüfen
+- [x] Designsystem und gemeinsame Navigation/Footer umsetzen
+- [x] Startseite für softex.solutions erstellen
+- [x] Leistungen, Unternehmen, Kontakt, Impressum und Datenschutz erstellen
+- [x] Eigene visuelle Medien einpflegen
+- [x] Responsivität, Metadaten und Bedienbarkeit prüfen
