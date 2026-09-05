@@ -31,7 +31,7 @@ function Karriere() {
       </section>
       <section className="bg-surface py-20 md:py-28">
         <div className="site-container">
-          <div className="section-heading"><div><p className="eyebrow">Offene Stellen</p><h2 className="section-title">Aktuelle Stellenangebote.</h2></div><p>Klicken Sie eine Position an, um die vollständige Anzeige zu lesen. Alle Angaben sind Beispiel-Texte und können angepasst werden.</p></div>
+          <div className="section-heading"><div><p className="eyebrow">Offene Stellen</p><h2 className="section-title">Aktuelle Stellenangebote.</h2></div><p>Klicken Sie eine Position an, um Aufgaben, Anforderungen und Eckdaten zu lesen.</p></div>
           <div className="job-list">
             {jobs.map((job, i) => (
               <Link key={job.slug} to="/karriere/$slug" params={{ slug: job.slug }} className="job-row">
@@ -44,14 +44,13 @@ function Karriere() {
               </Link>
             ))}
           </div>
-          <p className="mockup-note">Hinweis: Diese Stellenanzeigen sind Mockups zur Veranschaulichung des Formats.</p>
         </div>
       </section>
       <section className="site-container grid gap-10 py-20 md:grid-cols-2 md:py-28">
         <h2 className="section-title">Nichts Passendes dabei?</h2>
         <div className="prose-block">
           <p>Initiativbewerbungen sind willkommen. Schreiben Sie uns kurz, womit Sie sich auskennen und woran Sie arbeiten möchten — Betreff: „Initiativbewerbung".</p>
-          <a className="button button-dark mt-8" href="mailto:kontakt@softex.solutions?subject=Initiativbewerbung">Initiativ bewerben <ArrowUpRight size={17} /></a>
+          <Link className="button button-dark mt-8" to="/karriere/bewerbung" search={{ stelle: "Initiativbewerbung" }}>Initiativ bewerben <ArrowUpRight size={17} /></Link>
         </div>
       </section>
       <ContactBand />
