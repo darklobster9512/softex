@@ -220,7 +220,7 @@
   .contact-intro { padding: 7rem 0 6rem; background: var(--surface); }
   .contact-workspace { background: var(--background); }
   .contact-layout { display: grid; grid-template-columns: minmax(0, 1fr); }
-  .contact-layout > * { min-width: 0; }
+  .contact-layout > * { width: 100%; min-width: 0; max-width: 100%; }
   .contact-direct, .contact-form-column { padding-block: 5rem 6rem; }
   .contact-direct h2, .contact-form-column h2 { margin-top: 1.1rem; font-size: 2rem; line-height: 1.15; font-weight: 600; }
   .contact-copy { max-width: 31rem; margin-top: 1.5rem; color: var(--muted-foreground); line-height: 1.75; }
@@ -346,6 +346,7 @@
   .application-field, .application-field input, .application-field select { min-width: 0; }
   .application-submit .button { min-height: 3rem; }
   .contact-direct, .contact-form-column { padding-block: 4rem; }
+  .contact-direct h2, .contact-form-column h2 { overflow-wrap: anywhere; }
   .contact-form-column { border-top: 1px solid var(--border); }
   .contact-list, .contact-form { margin-top: 2.5rem; }
   .contact-row { grid-template-columns: 1.25rem minmax(0, 1fr) auto; gap: .75rem; min-height: 5.5rem; }
