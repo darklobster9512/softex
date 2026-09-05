@@ -27,7 +27,7 @@ export function Header({ inverse = false }: { inverse?: boolean }) {
         <div className="min-w-0"><Brand inverse={inverse} /></div>
         <nav className="hidden items-center gap-9 md:flex" aria-label="Hauptnavigation">
           {links.map((link) => <Link key={link.to} to={link.to} className="nav-link" activeProps={{ className: "nav-link nav-link-active" }}>{link.label}</Link>)}
-          <a href="mailto:kontakt@softex.solutions" className="button button-action">Projekt anfragen <ArrowUpRight size={17} /></a>
+          <Link to="/kontakt" className="button button-action">Projekt anfragen <ArrowUpRight size={17} /></Link>
         </nav>
         <button className="icon-button md:hidden" onClick={() => setOpen(!open)} aria-label={open ? "Menü schließen" : "Menü öffnen"} aria-expanded={open}>
           {open ? <X /> : <Menu />}
@@ -35,7 +35,7 @@ export function Header({ inverse = false }: { inverse?: boolean }) {
       </div>
       {open && <nav className="mobile-nav md:hidden" aria-label="Mobile Navigation">
         {links.map((link) => <Link key={link.to} to={link.to} onClick={() => setOpen(false)}>{link.label}</Link>)}
-        <a href="mailto:kontakt@softex.solutions">Projekt anfragen <ArrowUpRight size={18} /></a>
+        <Link to="/kontakt" onClick={() => setOpen(false)}>Projekt anfragen <ArrowUpRight size={18} /></Link>
       </nav>}
     </header>
   );
