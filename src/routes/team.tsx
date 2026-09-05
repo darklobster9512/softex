@@ -23,8 +23,8 @@ const members = [
   ["SB", "Sandra Bergmann", "Systemanalyse", "Macht Prozesse, Schnittstellen und Abhängigkeiten sichtbar, bevor Lösungen entstehen."],
   ["MK", "Jonas Krämer", "Softwareentwicklung", "Entwickelt individuelle System- und Anwendungssoftware mit Fokus auf Wartbarkeit."],
   ["MK", "Mira Köhler", "Softwareentwicklung", "Setzt Anforderungen in klare, robuste Anwendungen um und begleitet die Einführung."],
-  ["TW", "Tobias Wendt", "Hardware & Netzwerke", "Plant und betreut Infrastrukturen, die im Alltag verlässlich zusammenspielen."],
-  ["AL", "Aylin Larsen", "Beratung & Projektleitung", "Hält Anforderungen, Zeitrahmen und Beteiligte über das gesamte Vorhaben zusammen."],
+  ["TW", "Tobias Wendt", "Projektleiter", "Plant und betreut Infrastrukturen, die im Alltag verlässlich zusammenspielen."],
+  ["AL", "Andreas Lehmann", "Recruiter", "Hält Anforderungen, Zeitrahmen und Beteiligte über das gesamte Vorhaben zusammen."],
 ] as const;
 
 function Team() {
