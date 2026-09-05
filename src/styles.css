@@ -287,7 +287,7 @@
   .application-form { border: 1px solid var(--border); border-radius: .5rem; background: var(--card); padding: 1.5rem; box-shadow: 0 1.5rem 3.5rem -1.5rem color-mix(in oklab, var(--signal) 22%, transparent), 0 .25rem 1rem -0.5rem color-mix(in oklab, var(--foreground) 8%, transparent); }
   .application-grid { display: grid; gap: 1.4rem; }
   .application-field label { display: block; margin-bottom: .55rem; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
-  .application-field input, .application-field select { width: 100%; min-height: 3rem; border: 1px solid var(--input); border-radius: .2rem; background: transparent; color: var(--foreground); padding: .6rem .75rem; font: inherit; font-size: .875rem; box-shadow: none; }
+  .application-field input, .application-field select { width: 100%; min-height: 3rem; border: 1px solid var(--input); border-radius: .35rem; background: transparent; color: var(--foreground); padding: .6rem .75rem; font: inherit; font-size: .875rem; box-shadow: none; }
   .application-field select:focus-visible { outline: 1px solid var(--ring); outline-offset: 1px; }
   .application-field-wide { grid-column: 1 / -1; }
   .application-consent { margin-top: 1.5rem; color: var(--muted-foreground); font-size: .75rem; line-height: 1.6; }
@@ -311,7 +311,7 @@
   .job-detail-layout { grid-template-columns: minmax(0, 2fr) minmax(17rem, 1fr); padding-block: 6rem 7rem; }
   .job-detail-copy { padding: 2.5rem; }
   .job-facts { position: sticky; top: 7rem; padding: 2rem; }
-  .application-layout { width: min(100% - 5rem, 48rem); padding-block: 0 7rem; }
+  .application-layout { width: min(100% - 5rem, 48rem); padding-block: 2.5rem 7rem; }
   .application-form { padding: 3rem; }
   .application-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .application-submit .button { width: auto; }
@@ -342,7 +342,7 @@
   .job-detail-list li { grid-template-columns: 2.5rem minmax(0, 1fr); gap: .5rem; }
   .job-hero h1 { font-size: 2.65rem; }
   .job-breadcrumb { margin-bottom: 2rem; overflow-wrap: anywhere; }
-  .application-layout { padding-block: 0 4rem; }
+  .application-layout { padding-block: 1.5rem 4rem; }
   .application-field, .application-field input, .application-field select { min-width: 0; }
   .application-submit .button { min-height: 3rem; }
   .contact-direct, .contact-form-column { padding-block: 4rem; }
