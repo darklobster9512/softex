@@ -177,7 +177,7 @@
   .button-dark { background: var(--ink); color: var(--primary-foreground); }
   .button-ghost { border: 1px solid color-mix(in oklab, var(--primary-foreground) 35%, transparent); color: var(--primary-foreground); }
   .icon-button { display: grid; width: 2.75rem; height: 2.75rem; place-items: center; border: 1px solid currentColor; border-radius: .2rem; }
-  .mobile-nav { position: absolute; top: 5rem; left: 0; right: 0; background: var(--ink); padding: 1.25rem 1rem 2rem; color: var(--primary-foreground); border-top: 1px solid color-mix(in oklab, var(--primary-foreground) 14%, transparent); }
+  .mobile-nav { position: fixed; top: 5rem; right: 0; bottom: 0; left: 0; background: var(--ink); padding: 1.25rem 1rem 2rem; color: var(--primary-foreground); border-top: 1px solid color-mix(in oklab, var(--primary-foreground) 14%, transparent); }
   .mobile-nav a { display: flex; justify-content: space-between; padding: 1rem; border-bottom: 1px solid color-mix(in oklab, var(--primary-foreground) 12%, transparent); }
   .eyebrow { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .13em; }
   .section-title { margin-top: 1rem; font-size: 2.35rem; line-height: 1.08; font-weight: 600; }
