@@ -182,6 +182,7 @@
   .eyebrow { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .13em; }
   .section-title { margin-top: 1rem; font-size: 2.35rem; line-height: 1.08; font-weight: 600; }
   .section-heading { display: grid; gap: 2rem; align-items: end; }
+  .section-heading > * { min-width: 0; }
   .section-heading > p { max-width: 32rem; color: var(--muted-foreground); line-height: 1.7; }
   .home-hero { position: relative; min-height: min(47rem, 92vh); overflow: hidden; background: var(--ink); color: var(--primary-foreground); }
   .hero-image, .hero-shade { position: absolute; inset: 0; width: 100%; height: 100%; }
@@ -219,6 +220,7 @@
   .contact-intro { padding: 7rem 0 6rem; background: var(--surface); }
   .contact-workspace { background: var(--background); }
   .contact-layout { display: grid; }
+  .contact-layout > * { min-width: 0; }
   .contact-direct, .contact-form-column { padding-block: 5rem 6rem; }
   .contact-direct h2, .contact-form-column h2 { margin-top: 1.1rem; font-size: 2rem; line-height: 1.15; font-weight: 600; }
   .contact-copy { max-width: 31rem; margin-top: 1.5rem; color: var(--muted-foreground); line-height: 1.75; }
@@ -321,6 +323,7 @@
   .page-intro h1, .contact-intro h1 { font-size: 2.65rem; line-height: 1.04; }
   .page-lead { margin-top: 1.25rem; font-size: 1rem; line-height: 1.65; }
   .section-title { font-size: 2.15rem; }
+  .section-title { overflow-wrap: anywhere; }
   .section-heading { gap: 1.35rem; }
   .section-heading br, .contact-intro h1 br, .contact-direct h2 br { display: none; }
   .hero-content { padding-top: 10.5rem; padding-bottom: 4.5rem; }
