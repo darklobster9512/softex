@@ -211,7 +211,7 @@
   .prose-block { max-width: 35rem; color: var(--muted-foreground); line-height: 1.8; }.prose-block p + p { margin-top: 1.3rem; }
   .footer-label { font-size: .7rem; color: var(--primary-foreground); text-transform: uppercase; letter-spacing: .13em; }
   .page-intro { padding: 7rem 0 6rem; background: var(--surface); }
-  .page-intro-tight { padding-bottom: 0; }
+  .page-intro-tight { padding-bottom: 1rem; }
   .page-intro h1, .contact-intro h1 { margin-top: 1.3rem; max-width: 55rem; overflow-wrap: anywhere; font-size: 3.4rem; line-height: 1.02; font-weight: 600; }
   .page-lead { max-width: 46rem; margin-top: 1.5rem; color: var(--muted-foreground); font-size: 1.08rem; line-height: 1.7; }
   .service-list { border-top: 1px solid var(--border); }
@@ -283,8 +283,8 @@
   .job-apply-button { width: 100%; margin-top: 2rem; }
   .job-contact { margin-top: 1rem; color: var(--muted-foreground); font-size: .72rem; line-height: 1.5; }
   .job-contact a { color: var(--signal); overflow-wrap: anywhere; }
-  .application-layout { width: min(100% - 2rem, 48rem); margin-inline: auto; padding-block: 0 6rem; }
-  .application-form { border: 1px solid var(--border); background: var(--card); padding: 1.5rem; }
+  .application-layout { width: min(100% - 2rem, 48rem); margin-inline: auto; padding-block: 1.5rem 6rem; }
+  .application-form { border: 1px solid var(--border); border-radius: .5rem; background: var(--card); padding: 1.5rem; box-shadow: 0 1.5rem 3.5rem -1.5rem color-mix(in oklab, var(--signal) 22%, transparent), 0 .25rem 1rem -0.5rem color-mix(in oklab, var(--foreground) 8%, transparent); }
   .application-grid { display: grid; gap: 1.4rem; }
   .application-field label { display: block; margin-bottom: .55rem; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
   .application-field input, .application-field select { width: 100%; min-height: 3rem; border: 1px solid var(--input); border-radius: .2rem; background: transparent; color: var(--foreground); padding: .6rem .75rem; font: inherit; font-size: .875rem; box-shadow: none; }
