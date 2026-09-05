@@ -6,6 +6,8 @@ import softexLogo from "@/assets/softex-logo.png.asset.json";
 const links = [
   { to: "/leistungen", label: "Leistungen" },
   { to: "/unternehmen", label: "Unternehmen" },
+  { to: "/team", label: "Team" },
+  { to: "/karriere", label: "Karriere" },
   { to: "/kontakt", label: "Kontakt" },
 ] as const;
 
@@ -44,7 +46,7 @@ export function Footer() {
     <footer className="bg-ink text-primary-foreground">
       <div className="site-container grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr]">
         <div><Brand inverse /><p className="mt-5 max-w-sm text-sm leading-6 text-primary-foreground/65">Beratung und Softwareentwicklung für Systeme, die im Alltag bestehen.</p></div>
-        <div><p className="footer-label">Navigation</p><div className="mt-4 grid gap-3 text-sm"><Link to="/leistungen">Leistungen</Link><Link to="/unternehmen">Unternehmen</Link><Link to="/kontakt">Kontakt</Link></div></div>
+        <div><p className="footer-label">Navigation</p><div className="mt-4 grid gap-3 text-sm"><Link to="/leistungen">Leistungen</Link><Link to="/unternehmen">Unternehmen</Link><Link to="/team">Team</Link><Link to="/karriere">Karriere</Link><Link to="/kontakt">Kontakt</Link></div></div>
         <div><p className="footer-label">Kontakt</p><a className="mt-4 inline-flex items-center gap-2 text-sm text-signal" href="mailto:kontakt@softex.solutions">kontakt@softex.solutions <ArrowUpRight size={15} /></a><p className="mt-3 text-sm text-primary-foreground/65">Langwisch 2 · 22391 Hamburg</p></div>
       </div>
       <div className="border-t border-primary-foreground/10"><div className="site-container flex flex-col gap-3 py-6 text-xs text-primary-foreground/55 sm:flex-row sm:items-center sm:justify-between"><span>© 2026 Softex Unternehmensberatung & Software GmbH</span><span className="flex gap-5"><Link to="/impressum">Impressum</Link><Link to="/datenschutz">Datenschutz</Link></span></div></div>
