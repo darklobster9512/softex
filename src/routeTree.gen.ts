@@ -17,6 +17,8 @@ import { Route as KontaktRouteImport } from './routes/kontakt'
 import { Route as LeistungenRouteImport } from './routes/leistungen'
 import { Route as TeamRouteImport } from './routes/team'
 import { Route as UnternehmenRouteImport } from './routes/unternehmen'
+import { Route as KarriereIndexRouteImport } from './routes/karriere.index'
+import { Route as KarriereSlugRouteImport } from './routes/karriere.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -58,37 +60,52 @@ const UnternehmenRoute = UnternehmenRouteImport.update({
   path: '/unternehmen',
   getParentRoute: () => rootRouteImport,
 } as any)
+const KarriereIndexRoute = KarriereIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => KarriereRoute,
+} as any)
+const KarriereSlugRoute = KarriereSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => KarriereRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
-  '/karriere': typeof KarriereRoute
+  '/karriere': typeof KarriereRouteWithChildren
   '/kontakt': typeof KontaktRoute
   '/leistungen': typeof LeistungenRoute
   '/team': typeof TeamRoute
   '/unternehmen': typeof UnternehmenRoute
+  '/karriere/$slug': typeof KarriereSlugRoute
+  '/karriere/': typeof KarriereIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
-  '/karriere': typeof KarriereRoute
   '/kontakt': typeof KontaktRoute
   '/leistungen': typeof LeistungenRoute
   '/team': typeof TeamRoute
   '/unternehmen': typeof UnternehmenRoute
+  '/karriere/$slug': typeof KarriereSlugRoute
+  '/karriere': typeof KarriereIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
-  '/karriere': typeof KarriereRoute
+  '/karriere': typeof KarriereRouteWithChildren
   '/kontakt': typeof KontaktRoute
   '/leistungen': typeof LeistungenRoute
   '/team': typeof TeamRoute
   '/unternehmen': typeof UnternehmenRoute
+  '/karriere/$slug': typeof KarriereSlugRoute
+  '/karriere/': typeof KarriereIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -101,16 +118,19 @@ export interface FileRouteTypes {
     | '/leistungen'
     | '/team'
     | '/unternehmen'
+    | '/karriere/$slug'
+    | '/karriere/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/datenschutz'
     | '/impressum'
-    | '/karriere'
     | '/kontakt'
     | '/leistungen'
     | '/team'
     | '/unternehmen'
+    | '/karriere/$slug'
+    | '/karriere'
   id:
     | '__root__'
     | '/'
@@ -121,13 +141,15 @@ export interface FileRouteTypes {
     | '/leistungen'
     | '/team'
     | '/unternehmen'
+    | '/karriere/$slug'
+    | '/karriere/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DatenschutzRoute: typeof DatenschutzRoute
   ImpressumRoute: typeof ImpressumRoute
-  KarriereRoute: typeof KarriereRoute
+  KarriereRoute: typeof KarriereRouteWithChildren
   KontaktRoute: typeof KontaktRoute
   LeistungenRoute: typeof LeistungenRoute
   TeamRoute: typeof TeamRoute
@@ -192,14 +214,42 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof UnternehmenRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/karriere/': {
+      id: '/karriere/'
+      path: '/'
+      fullPath: '/karriere/'
+      preLoaderRoute: typeof KarriereIndexRouteImport
+      parentRoute: typeof KarriereRoute
+    }
+    '/karriere/$slug': {
+      id: '/karriere/$slug'
+      path: '/$slug'
+      fullPath: '/karriere/$slug'
+      preLoaderRoute: typeof KarriereSlugRouteImport
+      parentRoute: typeof KarriereRoute
+    }
   }
 }
+
+interface KarriereRouteChildren {
+  KarriereSlugRoute: typeof KarriereSlugRoute
+  KarriereIndexRoute: typeof KarriereIndexRoute
+}
+
+const KarriereRouteChildren: KarriereRouteChildren = {
+  KarriereSlugRoute: KarriereSlugRoute,
+  KarriereIndexRoute: KarriereIndexRoute,
+}
+
+const KarriereRouteWithChildren = KarriereRoute._addFileChildren(
+  KarriereRouteChildren,
+)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DatenschutzRoute: DatenschutzRoute,
   ImpressumRoute: ImpressumRoute,
-  KarriereRoute: KarriereRoute,
+  KarriereRoute: KarriereRouteWithChildren,
   KontaktRoute: KontaktRoute,
   LeistungenRoute: LeistungenRoute,
   TeamRoute: TeamRoute,
