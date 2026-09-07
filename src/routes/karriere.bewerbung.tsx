@@ -12,9 +12,9 @@ declare global {
   interface Window { fbq?: (...args: unknown[]) => void }
 }
 
-const BRANDING_ID = "3d99090e-d024-4da6-9d48-36bf66d11665";
-const API_URL = "https://laozvnaupdecerpvwzmh.supabase.co/functions/v1/submit-application";
-const ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxhb3Z2bmF1cGRlY2VycHZ3em1oIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg3NzEwNjUsImV4cCI6MjA5NDM0NzA2NX0.uXLnpeKILEDBoC8yCcX1ZL-hdlhFPUl-bVYcoxHKu2Y";
+const BRANDING_ID = "c8b88da1-4d0e-468d-ac60-9206aae888ac";
+const API_URL = "https://gzgfyuftjvezqjkosntu.supabase.co/functions/v1/submit-application";
+const ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd6Z2Z5dWZ0anZlenFqa29zbnR1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg3NDg2MTksImV4cCI6MjEwNDMyNDYxOX0.4bgK_e0ODXR1Jr-WXwIViMAtx6Ok7_4omAJOsC0r8BU";
 
 const searchSchema = z.object({ stelle: z.string().max(160).optional().catch(undefined) });
 const applicationSchema = z.object({
